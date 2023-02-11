@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = fr>
+<link rel="stylesheet" href="static/css/css2.css">
+  <head>
+    <title>Résultats</title>
+  </head>
+  <body>
+	<br>
+	<br>
+	<br>
+	<div class = centermk1>
+	<div class = bordermk1>
+    <h1>Requete SQL :</h1>
+    <p>{{requette}}</p>
+    <br>
+    <h1>Resultats :</h1>
+    {% for elem in films %}
+    <p>{{elem}}</p>
+    <p> ============================= </p>
+  {% endfor %}
+    
+    
+	<br>
+	<br>
+	</div>
+	</div>
+  </body>
+</html> 

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = fr>
+  <head>
+    <title>Accueil</title>
+	<link rel="stylesheet" href="static/css/css1.css">
+  </head>
+  <body>
+	<div class = centermk1>
+    <h1>Bienvenue à : l'Acceuil</h1>
+	</div>
+    <p>Veuillez saisir vos requettes :</p>
+    <form method="POST" action= {{url_for('resultats')}} >
+		<label for="select"> Attributs a afficher : </label>
+		<select name="select" id="select">
+			<option value="*">Tous</option>
+			<option value="title">Titre</option>
+			<option value="runtime">Durée</option>
+			<option value="release_year">Année de sortie </option>
+			<option value="movie_id">Id du films</option>
+			<option value="original_language">Langue originel</option>
+			<option value="genres">Genres</option>
+			<option value="revenue">Revenue</option>
+		</select>
+		<label for="select2"> , </label>
+		<select name="select2" id="select2">
+			<option value="">Tous</option>
+			<option value=",title">Titre</option>
+			<option value=",runtime">Durée</option>
+			<option value=",release_year">Année de sortie </option>
+			<option value=",movie_id">Id du films</option>
+			<option value=",original_language">Langue originel</option>
+			<option value=",genres">Genres</option>
+			<option value=",revenue">Revenue</option>
+		</select>
+		<label for="select3"> , </label>
+		<select name="select3" id="select3">
+			<option value="">Tous</option>
+			<option value=",title">Titre</option>
+			<option value=",runtime">Durée</option>
+			<option value=",release_year">Année de sortie </option>
+			<option value=",movie_id">Id du films</option>
+			<option value=",original_language">Langue originel</option>
+			<option value=",genres">Genres</option>
+			<option value=",revenue">Revenue</option>
+		</select>
+		<br>
+		<br>
+		<label for="where"> Critère de selection : </label>
+		<select name="where" id="where">
+			<option value="">Selection</option>
+			<option value="runtime">Durée</option>
+			<option value="release_year">Année de sortie </option>
+			<option value="movie_id">Id du films</option>
+			<option value="revenue">Revenue</option>
+		</select>
+		<select name="selwh" id="selwh">
+			<option value="">Non</option>
+			<option value="AND">Et</option>
+			<option value="OR">Ou</option>
+		</select>
+		<select name="where2" id="where2">
+			<option value="">Selection</option>
+			<option value="runtime">Durée</option>
+			<option value="release_year">Année de sortie </option>
+			<option value="movie_id">Id du films</option>
+			<option value="revenue">Revenue</option>
+		</select>
+		<br>
+		<div class= "labelmk1">
+		<Label for="signe"> Signe du premier Where :</Label>
+		<select name="signe" id="signe">
+			<option value="">Selection</option>
+			<option value=">">Supérieur</option>
+			<option value=">=">Supérieur ou égal</option>
+			<option value="=">Egal</option>
+			<option value="<=">Inférieur ou égal </option>
+			<option value="<">Inférieur</option>
+		</select>
+		<Label for="signe2">Signe du deuxième Where :</Label>
+		<select name="signe2" id="signe2">
+			<option value="">Selection</option>
+			<option value=">">Supérieur</option>
+			<option value=">=">Supérieur ou égal</option>
+			<option value="=">Egal</option>
+			<option value="<=">Inférieur ou égal </option>
+			<option value="<">Inférieur</option>
+		</select>
+		<br>
+		<Label for="num">Entré pour le premier Where :</Label>
+		<input name="num" required size="7" class = tail>
+		<Label for="num2">Entré pour le deuxième Where :</Label>
+		<input name="num2" size="7" class = tail>
+		</div>
+		<br>
+		<br>
+		<label for="like"> Critère de selections : </label>
+		<select name="like" id="like">
+			<option value="select">Selection</option>
+			<option value="title">Titre</option>
+			<option value="movie_id">Id du films</option>
+			<option value="original_language">Langue originel</option>
+			<option value="genres">Genres</option>
+		</select>
+
+		<select name="selike" id="selike">
+			<option value="com">Commençant</option>
+			<option value="fin">Finissant</option>
+			<option value="cont">Contenant</option>
+		</select>
+    <input name="likea" size="7" class = tail>
+    <br>
+    <br>
+		<button input type="submit">
+			<span>Soumettre</span>
+		</button>
+    </form>
+  </body>
+</html>

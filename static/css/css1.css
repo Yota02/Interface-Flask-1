@@ -1,0 +1,85 @@
+h1{
+	text-align: center;
+	font-size: 50px;
+	background-color: #696969;
+	background-position: center;
+	display: inline-block;
+	font-family: Bahnschrift;
+	border : 1px solid black;
+}
+.centermk1{
+	margin : auto;
+	text-align : center;
+}
+
+
+body{
+	background-image: url("image1.jpg");
+	background-size: 1366px 768px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+form{
+	text-align: center;
+	font-size: 25px;
+}
+
+button{
+	display: inline-block;
+	background-color: grey;
+	border-radius: 11px;
+	border: 4px double #cccccc;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	padding: 15px;
+	width: 110px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 2px;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+button :hover{
+	text-shadow: 2px 2px 5px black;
+}
+
+p{
+	text-align: center;
+	font-size: 35px;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: Cambria;
+}
+
+label{
+	font-weight: bold;
+}
+
+tail{ 
+	width:300px;
+}
+
+select {
+	width: 160px;
+	height: 35px;
+	padding: 5px 35px 5px 5px;
+	font-size: 15px;
+	border: 1.5px solid black;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: Georgia;
+}
+select::-ms-expand {
+    display: none;
+}
+
+.labelmk1{
+	font-size: 15px;
+}
